@@ -57,7 +57,7 @@ int main() {
     printf("Enter filename: ");
     scanf("%s", filename);
 
-    FILE *fp = fopen(filename, "r");
+    FILE *fp = fopen(filename, "w");
     if (fp == NULL) {
         printf("Error: cannot open file %s\n", filename);
         exit(1);
